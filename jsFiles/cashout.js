@@ -9,11 +9,11 @@ document.getElementById('cashout-form-btn').addEventListener('click',function(ev
         const cashoutPin  = document.getElementById('cashoutpin').value;
         // now set the pin and amount 
         if(cashoutPin === "1234"){
-                const currentblance = document.getElementById('currentblance');
+                const currentblance = document.getElementById('currentblance').innerText;
                 // this is converting string to number
-                const curentbalance = parseFloat(currentblance.innerText);
+                const newcurentbalance = parseFloat(currentblance);
 
-                const newBalance = curentbalance - cashoutNum;
+                const newBalance = newcurentbalance - cashoutNum;
 
                 document.getElementById('currentblance').innerText = newBalance;
         }

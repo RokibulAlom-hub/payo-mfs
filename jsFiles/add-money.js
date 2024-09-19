@@ -18,15 +18,15 @@ document.getElementById('add-btn').addEventListener('click',function(event){
     
     if(pinvalue === '1234'){
         //add the money
-       const currentblance = document.getElementById('currentblance');
-    //    convert the balance string to number
+        //    convert the balance string to number
+       const currentblance = document.getElementById('currentblance').innerText;
+       const newcurrentbalance = parseFloat(currentblance);
     /**
      * important note that if we want to collect element data then we should use innertext method 
      * and for input field we have to use .value method
      */
-        const balance = parseFloat(currentblance.innerText);
         // sum  new input money with current balance
-        const newbalance = balance + inputbalnce;
+        const newbalance = newcurrentbalance + inputbalnce;
         // here we will updated the currentbalance
         document.getElementById('currentblance').innerText = newbalance;
     }

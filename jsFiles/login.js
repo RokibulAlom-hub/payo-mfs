@@ -7,7 +7,7 @@
  */
 
 // step 1
-document.getElementById('btn-click').addEventListener('click',function(event){
+document.getElementById('btn-click').addEventListener('click', function(event){
     event.preventDefault();
     //step one done
 
