@@ -18,14 +18,8 @@ document.getElementById('btn-click').addEventListener('click',function(event){
 
     // step three
     if(collectnumber === '01' && collectpin === '1234'){
-        console.log('yes this is right');
         window.location.href ='/homepage.html';
     }
     else(alert('number or pin is wrong'));
-    // step three done 
-
-    // step four
-
-    
     
 })
